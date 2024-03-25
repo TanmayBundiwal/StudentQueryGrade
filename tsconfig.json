@@ -1,0 +1,22 @@
+{
+	"extends": "@tsconfig/node16/tsconfig.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"typeRoots": [
+			"./node_modules/@types"
+		],
+		"esModuleInterop": true,   // Add this line
+		"allowSyntheticDefaultImports": true   // Add this line
+	},
+	"include": [
+		"src/**/*.ts",
+		"test/**/*.ts"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

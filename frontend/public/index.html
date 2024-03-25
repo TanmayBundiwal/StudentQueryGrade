@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<title>310 Frontend</title>
+		<link href="/style.css" rel="stylesheet" />
+		<h2>Query Building Page</h2>
+	</head>
+	<body>
+
+		<form id="US1" action="http://localhost:4321/query" method="POST">
+			<p>Enter the department name, please!</p>
+			<label for="DeptName">Choose a department:</label>
+			<select name="DeptName" id="DeptName">
+				<option value="cpsc">CPSC</option>
+				<option value="math">MATH</option>
+				<option value="chem">CHEM</option>
+				<option value="phil">PHIL</option>
+				<option value="cpen">CPEN</option>
+				<option value="soci">SOCI</option>
+				<option value="stat">STAT</option>
+				<option value="anth">ANTH</option>
+				<option value="biol">BIOL</option>
+			</select>
+			<br><br>
+			<button type="button" id="Search1">Search</button>
+			<div class="Table1" id="Table1" style="display: none">
+				<table>
+					<thead>
+					<tr>
+						<th>TITLE</th>
+						<th>ID</th>
+						<th>YEAR</th>
+					</tr>
+					</thead>
+					<tbody id="TableDisplay1">
+					</tbody>
+				</table>
+			</div>
+			<p id="Display1"></p>
+		</form>
+
+		<form id="US2" action="http://localhost:4321/query" method="POST">
+			<p>Enter the professor name, please!</p>
+			<label for="ProfName">Professor Name:</label>
+			<input type="text" id="ProfName" value="">
+			<button type="button" id="Search2">Search</button>
+
+			<div class="Table2" id="Table2" style="display: none">
+				<table>
+					<thead>
+					<tr>
+						<th>TITLE</th>
+						<th>DEPT</th>
+						<th>ID</th>
+					</tr>
+					</thead>
+					<tbody id="TableDisplay2">
+					</tbody>
+				</table>
+			</div>
+			<p id="Display2" style="display: none"></p>
+		</form>
+
+
+		<script type="text/javascript" src="/frontend.js"></script>
+	</body>
+</html>
