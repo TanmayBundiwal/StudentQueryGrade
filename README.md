@@ -1,4 +1,4 @@
-# InsightUBC: Student Query Grade System
+# Student Query Grade System
 
 ## Overview
 
